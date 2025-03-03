@@ -30,7 +30,8 @@ Update your composer.son file:
     ],
     "require": {
         "vaneetjoshi/laravelthememanager": "dev-master"
-    },```
+    },
+```
 
 Wait for a while, Composer will automatically install Themevel in your project.
 
