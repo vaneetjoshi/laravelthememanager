@@ -1,6 +1,6 @@
 <?php
 
-namespace Shipu\Themevel\Facades;
+namespace Vaneetjoshi\Laravelthememanager\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -13,6 +13,6 @@ class Theme extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return \Shipu\Themevel\Contracts\ThemeContract::class;
+        return \Vaneetjoshi\Laravelthememanager\Contracts\ThemeContract::class;
     }
 }

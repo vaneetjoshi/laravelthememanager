@@ -1,6 +1,6 @@
 <?php
 
-namespace Shipu\Themevel\Contracts;
+namespace Vaneetjoshi\Laravelthememanager\Contracts;
 
 interface ThemeContract
 {

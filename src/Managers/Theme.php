@@ -1,14 +1,14 @@
 <?php
 
-namespace Shipu\Themevel\Managers;
+namespace Vaneetjoshi\Laravelthememanager\Managers;
 
 use Illuminate\Config\Repository;
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Translation\Translator;
 use Illuminate\View\ViewFinderInterface;
 use Noodlehaus\Config;
-use Shipu\Themevel\Contracts\ThemeContract;
-use Shipu\Themevel\Exceptions\ThemeNotFoundException;
+use Vaneetjoshi\Laravelthememanager\Contracts\ThemeContract;
+use Vaneetjoshi\Laravelthememanager\Exceptions\ThemeNotFoundException;
 
 class Theme implements ThemeContract
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Shipu\Themevel\Console;
+namespace Vaneetjoshi\Laravelthememanager\Console;
 
 use Illuminate\Console\Command;
-use Shipu\Themevel\Contracts\ThemeContract;
+use Vaneetjoshi\Laravelthememanager\Contracts\ThemeContract;
 
 class ThemeListCommand extends Command
 {

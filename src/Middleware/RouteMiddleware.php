@@ -1,6 +1,6 @@
 <?php
 
-namespace Shipu\Themevel\Middleware;
+namespace Vaneetjoshi\Laravelthememanager\Middleware;
 
 use Closure;
 

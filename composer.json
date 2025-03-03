@@ -1,13 +1,13 @@
 {
-    "name": "shipu/themevel",
+    "name": "vaneetjoshi/laravelthememanager",
     "description": "Theme and asset management for laravel",
     "keywords": ["theme", "child-theme", "multi", "themevel", "asset", "management", "laravel", "lumen"],
-    "homepage": "https://github.com/shipu/themevel",
+    "homepage": "https://github.com/vaneetjoshi/laravelthememanager",
     "license": "CC-BY-3.0",
     "authors": [
         {
-            "name": "Shipu Ahamed",
-            "email": "shipuahamed01@gmail.com"
+            "name": "Vaneet Joshi",
+            "email": "csts.asr@gmail.com"
         }
     ],
     "require": {
@@ -19,21 +19,21 @@
     },
     "autoload": {
         "psr-4": {
-            "Shipu\\Themevel\\": "src/"
+            "Vaneetjoshi\\Laravelthememanager\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Shipu\\Themevel\\Tests\\": "tests/"
+            "Vaneetjoshi\\Laravelthememanager\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Shipu\\Themevel\\Providers\\ThemevelServiceProvider"
+                "Vaneetjoshi\\Laravelthememanager\\Providers\\ThemevelServiceProvider"
             ],
             "aliases": {
-                "Theme": "Shipu\\Themevel\\Facades\\Theme"
+                "Theme": "Vaneetjoshi\\Laravelthememanager\\Facades\\Theme"
             }
         }
     },

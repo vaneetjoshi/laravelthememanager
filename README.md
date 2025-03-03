@@ -1,8 +1,8 @@
 # Laravel-Themevel
-[![Latest Stable Version](https://api.travis-ci.org/shipu/themevel.svg?branch=master)](https://travis-ci.org/shipu/themevel)
-[![Latest Stable Version](https://poser.pugx.org/shipu/themevel/v/stable)](https://packagist.org/packages/shipu/themevel)
-[![Latest Unstable Version](https://poser.pugx.org/shipu/themevel/v/unstable)](https://packagist.org/packages/shipu/themevel)
-[![License](https://poser.pugx.org/shipu/themevel/license)](https://packagist.org/packages/shipu/themevel)
+[![Latest Stable Version](https://api.travis-ci.org/vaneetjoshi/laravelthememanager.svg?branch=master)](https://travis-ci.org/vaneetjoshi/laravelthememanager)
+[![Latest Stable Version](https://poser.pugx.org/vaneetjoshi/laravelthememanager/v/stable)](https://packagist.org/packages/vaneetjoshi/laravelthememanager)
+[![Latest Unstable Version](https://poser.pugx.org/vaneetjoshi/laravelthememanager/v/unstable)](https://packagist.org/packages/vaneetjoshi/laravelthememanager)
+[![License](https://poser.pugx.org/vaneetjoshi/laravelthememanager/license)](https://packagist.org/packages/vaneetjoshi/laravelthememanager)
 
 Themevel is a Laravel theme and asset management package. You can easily integrate this package with any Laravel based project.
 
@@ -26,7 +26,7 @@ Themevel is a Laravel theme and asset management package. You can easily integra
 Themevel is a Laravel package so you can install it via Composer. Run this command in your terminal from your project directory:
 
 ```sh
-composer require shipu/themevel
+composer require vaneetjoshi/laravelthememanager
 ```
 
 Wait for a while, Composer will automatically install Themevel in your project.
@@ -36,19 +36,19 @@ Wait for a while, Composer will automatically install Themevel in your project.
 Below **Laravel 5.5** you have to call this package service in `config/app.php` config file. To do that, add this line in `app.php` in `providers` array:
 
 ```php
-Shipu\Themevel\Providers\ThemevelServiceProvider::class,
+Vaneetjoshi\Laravelthememanager\Providers\ThemevelServiceProvider::class,
 ```
 
 Below **Laravel 5.5** version to use facade you have to add this line in `app.php` to the `aliases` array:
 
 ```php
-'Theme' => Shipu\Themevel\Facades\Theme::class,
+'Theme' => Vaneetjoshi\Laravelthememanager\Facades\Theme::class,
 ```
 
 Now run this command in your terminal to publish this package resources:
 
 ```
-php artisan vendor:publish --provider="Shipu\Themevel\Providers\ThemevelServiceProvider"
+php artisan vendor:publish --provider="Vaneetjoshi\Laravelthememanager\Providers\ThemevelServiceProvider"
 ```
 
 ## Artisan Command
@@ -149,14 +149,14 @@ Suppose you want find `welcome.blade.php`
  ```
 
 ## API List
-- [set](https://github.com/shipu/themevel#set)
-- [get](https://github.com/shipu/themevel#get)
-- [current](https://github.com/shipu/themevel#current)
-- [all](https://github.com/shipu/themevel#all)
-- [has](https://github.com/shipu/themevel#has)
-- [getThemeInfo](https://github.com/shipu/themevel#getThemeInfo)
-- [assets](https://github.com/shipu/themevel#assets)
-- [lang](https://github.com/shipu/themevel#lang)
+- [set](https://github.com/vaneetjoshi/laravelthememanager#set)
+- [get](https://github.com/vaneetjoshi/laravelthememanager#get)
+- [current](https://github.com/vaneetjoshi/laravelthememanager#current)
+- [all](https://github.com/vaneetjoshi/laravelthememanager#all)
+- [has](https://github.com/vaneetjoshi/laravelthememanager#has)
+- [getThemeInfo](https://github.com/vaneetjoshi/laravelthememanager#getThemeInfo)
+- [assets](https://github.com/vaneetjoshi/laravelthememanager#assets)
+- [lang](https://github.com/vaneetjoshi/laravelthememanager#lang)
 
 ### set
 
@@ -306,7 +306,7 @@ First register it in app\Http\Kernel.php:
 ```php
 protected $routeMiddleware = [
     // ...
-    'theme' => \Shipu\Themevel\Middleware\RouteMiddleware::class,
+    'theme' => \Vaneetjoshi\Laravelthememanager\Middleware\RouteMiddleware::class,
 ];
 ```
 Now you can apply the middleware to a route or route-group. Eg:
@@ -326,7 +326,7 @@ First register it in app\Http\Kernel.php:
 protected $middlewareGroups = [
     'web' => [
         // ...
-        \Shipu\Themevel\Middleware\WebMiddleware::class,
+        \Vaneetjoshi\Laravelthememanager\Middleware\WebMiddleware::class,
     ],
     // ...
 ];
@@ -348,7 +348,7 @@ return view('home');  // This will load the home.blade.php from the the folder y
 You can also inject theme instance using ThemeContract, eg:
 
 ``` php
-use Shipu\Themevel\Contracts\ThemeContract;
+use Vaneetjoshi\Laravelthememanager\Contracts\ThemeContract;
 
 private $theme;
 

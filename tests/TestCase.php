@@ -1,9 +1,9 @@
 <?php
 
-namespace Shipu\Themevel\Tests;
+namespace Vaneetjoshi\Laravelthememanager\Tests;
 
 use GrahamCampbell\TestBench\AbstractPackageTestCase;
-use Shipu\Themevel\Providers\ThemevelServiceProvider;
+use Vaneetjoshi\Laravelthememanager\Providers\ThemevelServiceProvider;
 
 /**
  * This is the abstract test case class.

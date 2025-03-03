@@ -1,13 +1,13 @@
 <?php
 
-namespace Shipu\Themevel\Providers;
+namespace Vaneetjoshi\Laravelthememanager\Providers;
 
 use App;
 use File;
 use Illuminate\Support\ServiceProvider;
-use Shipu\Themevel\Console\ThemeListCommand;
-use Shipu\Themevel\Contracts\ThemeContract;
-use Shipu\Themevel\Managers\Theme;
+use Vaneetjoshi\Laravelthememanager\Console\ThemeListCommand;
+use Vaneetjoshi\Laravelthememanager\Contracts\ThemeContract;
+use Vaneetjoshi\Laravelthememanager\Managers\Theme;
 
 class ThemevelServiceProvider extends ServiceProvider
 {
@@ -49,7 +49,7 @@ class ThemevelServiceProvider extends ServiceProvider
         if (config('theme.types.enable')) {
             $themeTypes = config('theme.types.middleware');
             foreach ($themeTypes as $middleware => $themeName) {
-                $this->app['router']->aliasMiddleware($middleware, '\Shipu\Themevel\Middleware\RouteMiddleware:'.$themeName);
+                $this->app['router']->aliasMiddleware($middleware, '\Vaneetjoshi\Laravelthememanager\Middleware\RouteMiddleware:'.$themeName);
             }
         }
     }
@@ -120,7 +120,7 @@ class ThemevelServiceProvider extends ServiceProvider
     public function registerThemeGeneratorCommand()
     {
         $this->app->singleton('theme.create', function ($app) {
-            return new \Shipu\Themevel\Console\ThemeGeneratorCommand($app['config'], $app['files']);
+            return new \Vaneetjoshi\Laravelthememanager\Console\ThemeGeneratorCommand($app['config'], $app['files']);
         });
     }
 

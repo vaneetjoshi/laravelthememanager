@@ -1,6 +1,6 @@
 <?php
 
-namespace Shipu\Themevel\Exceptions;
+namespace Vaneetjoshi\Laravelthememanager\Exceptions;
 
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 

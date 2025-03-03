@@ -1,6 +1,6 @@
 <?php
 
-namespace Shipu\Themevel\Tests;
+namespace Vaneetjoshi\Laravelthememanager\Tests;
 
 class ThemeTest extends TestCase
 {

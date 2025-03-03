@@ -115,7 +115,7 @@ return [
     |
     */
     'stubs'      => [
-        'path'  => base_path('vendor/shipu/themevel/src/Console/stubs'),
+        'path'  => base_path('vendor/vaneetjoshi/laravelthememanager/src/Console/stubs'),
         'files' => [
             'css'    => 'assets/css/app.css',
             'layout' => 'views/layouts/master.blade.php',

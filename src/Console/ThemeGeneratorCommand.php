@@ -1,6 +1,6 @@
 <?php
 
-namespace Shipu\Themevel\Console;
+namespace Vaneetjoshi\Laravelthememanager\Console;
 
 use Illuminate\Config\Repository;
 use Illuminate\Console\Command;
