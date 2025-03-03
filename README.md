@@ -21,7 +21,7 @@ Themevel is a Laravel theme and asset management package. You can easily integra
 
 Update your composer.son file:
 
-````php
+```php
     "repositories": [
         {
             "type": "vcs",
